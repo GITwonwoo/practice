@@ -35,7 +35,7 @@ const handleAddToCart = (e) => {
 
   }, [])
   return (
-    <div className={`${ct} position-relative d-inline-block pb-3
+    <div className={`${ct} position-relative pb-3
     `} data-id={info.productId}>
                 <div className='position-absolute d-flex oriinner gap-1'>
                   {
@@ -67,11 +67,11 @@ const handleAddToCart = (e) => {
            
               <div className="product-info oriinner pt-0 pb-0 w-100">
                 <h3 className={`${ct}-prdnm text-overflow`}>{info.name}</h3>
-                { discountPrice > 0 && <span className={`${ct}-price d-lg-none d-sm-flex pb-0`}>
+                { discountPrice > 0 && <span className={`${ct}-price d-lg-none pb-0`}>
                     {originalPrice.toLocaleString()}원
                   </span> }
                 <p className='d-none'>{info.description}</p>
-                <div className="price d-flex flex-wrap justify-content-between gap-1 align-items-end">
+                <div className={`price d-flex justify-content-between gap-1 align-items-end `}>
                     {/* 할인율 표시 */}
                     { discountPrice  && discountPrice >0 ? <span className={`${ct}-current-price text-discount`}>
                       {  `${Math.round(100 - (discountPrice / originalPrice) * 100)}%`}       
@@ -83,7 +83,7 @@ const handleAddToCart = (e) => {
                     { discountPrice  && discountPrice >0 ? discountPrice.toLocaleString() : originalPrice.toLocaleString()}원
                   </span>
                   {/* 할인 상품이 아닐 때 원래 가격을 숨김 처리 */}
-                  { discountPrice > 0 && <span className={`${ct}-price me-auto invisible d-md-flex`}>
+                  { discountPrice > 0 && <span className={`${ct}-price me-auto  d-lg-flex d-none`}>
                     {originalPrice.toLocaleString()}원
                   </span> }
 

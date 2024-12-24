@@ -41,3 +41,12 @@
     }
   }
 }
+
+#mainSaleset{
+  .price{
+      &.d-flex{
+        flex-wrap: wrap;
+      }
+  }
+}
+

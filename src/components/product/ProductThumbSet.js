@@ -28,7 +28,7 @@ export const  ProductThumbSet = ({ id, style, ea, filterNV, to, className, addTo
   {limitedProducts.map((product, index) => (
     <li
       key={product.productId}
-      className={`${style} col-lg-3 col-md-4 col-sm-6`}
+      className={`${style} col-lg-3 col-md-4 col-6`}
     >
       <ProductItem info={product} addToCart={addToCart} />
     </li>
