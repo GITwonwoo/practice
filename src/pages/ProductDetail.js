@@ -310,7 +310,7 @@ console.log("purchasePr 계산:", purchasePr);
   return (
     <div className="mw">
       {locationinfo && (
-        <div className="location d-flex justify-content-end align-items-center pt-3 pb-4">
+        <div className="location d-flex justify-content-end align-items-center pt-3 pb-4 mt-3">
           <span>
             <Link to="/">
             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" className='me-1'>
