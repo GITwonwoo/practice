@@ -10,7 +10,7 @@ export default function Recipe() {
 
   return (
     <div className="mw mb160 px-3 px-xxl-0">
-              <div className="location d-flex justify-content-end py-4 align-items-center">
+              <div className="location d-flex justify-content-end py-4 align-items-center mt-3">
                 <span>
                   <Link to="/">
                   <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg" className='me-1'>
